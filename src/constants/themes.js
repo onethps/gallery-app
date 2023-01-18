@@ -20,18 +20,13 @@ export const spacing = {
   s: 5,
   m: 10,
   l: 15,
+  borderRadius: 10,
 };
 
 export const typography = {
-  h1: {
-    fontSize: 20,
-  },
-  h2: {
-    fontSize: 18,
-  },
-  h3: {
-    fontSize: 16,
-  },
+  h2: 24,
+  h3: 18,
+  body: 14,
 };
 
 export const shadow = {
