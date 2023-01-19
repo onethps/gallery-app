@@ -1,6 +1,6 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import React from 'react';
-import {StyleSheet, Animated, Text} from 'react-native';
+import {StyleSheet, Animated} from 'react-native';
 import {FavoriteIcon, HomeIcon, SearchIcon} from '../constants/icons';
 import {colors, sizes} from '../constants/themes';
 import {FavoriteScreen} from '../screens/FavoriteScreen';
