@@ -17,7 +17,7 @@ export const DetailsScreen = ({route}) => {
         <ArrowLeft style={styles.backIcon} onPress={() => nav.goBack()} />
       </View>
       <SharedElement
-        style={StyleSheet.absoluteFillObject}
+        style={[StyleSheet.absoluteFillObject]}
         id={`item.${item.id}.photo`}>
         <View style={[StyleSheet.absoluteFillObject, styles.imageBox]}>
           <Image
@@ -47,11 +47,11 @@ const styles = StyleSheet.create({
   },
   imageBox: {
     overflow: 'hidden',
-    borderRadius: sizes.borderRadius,
   },
   image: {
     width: sizes.width,
     height: sizes.height,
     resizeMode: 'cover',
+    borderRadius: 20,
   },
 });

@@ -1,7 +1,5 @@
 import {FlatList, StyleSheet, Image, View} from 'react-native';
 import React from 'react';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {shadow, sizes, spacing} from '../constants/themes';
 import {useNavigation} from '@react-navigation/native';
 import {SharedElement} from 'react-navigation-shared-element';
 import {Carousel} from './shared/Carousel';

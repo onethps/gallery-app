@@ -34,6 +34,8 @@ target 'AwesomeProject' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text', :modular_headers => true
+
   target 'AwesomeProjectTests' do
     inherit! :complete
     # Pods for testing

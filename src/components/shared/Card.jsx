@@ -1,6 +1,6 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {colors, shadow, sizes} from '../../constants/themes';
+import {colors, shadow, sizes, spacing} from '../../constants/themes';
 
 export const Card = ({children, style, onPress, shadowStyle = 'light'}) => {
   return (
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 200,
     backgroundColor: colors.white,
-    borderRadius: sizes.radius,
+    borderRadius: spacing.borderRadius,
   },
   inner: {
     width: '100%',

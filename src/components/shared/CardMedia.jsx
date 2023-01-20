@@ -1,13 +1,10 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {sizes, spacing} from '../../constants/themes';
-
-const CARD_WIDTH = sizes.width - 80;
-const CARD_HEIGHT = 200;
+import {spacing} from '../../constants/themes';
 
 export const CardMedia = ({source}) => {
   return (
-    <View style={styles.imageBox}>
+    <View style={styles.media}>
       <Image
         source={{
           uri: source.link,
@@ -19,9 +16,10 @@ export const CardMedia = ({source}) => {
 };
 
 const styles = StyleSheet.create({
-  imageBox: {
+  media: {
     flex: 1,
     overflow: 'hidden',
+    borderRadius: spacing.borderRadius,
   },
   image: {
     width: '100%',
